@@ -3,11 +3,13 @@ body {
 }
 /* aligning the content of the page */
 @media(min-width:991px){
+
     .container {
+        margin: auto;
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .row {
@@ -25,6 +27,7 @@ body {
         display: flex;
         flex: 10;
     }
+
 }
 
 @media(max-width:991px){
@@ -103,32 +106,36 @@ body {
 
 /* navigation */
 /* TODO: maybe make this dependent on the media query */
-ul#nav {
+#nav {
     text-align: center;
 }
-ul#nav li {
+
+div#nav ul {
+    text-align: center;
+}
+div#nav ul li {
     display: inline-block;
     margin-left: 10px;
 }
 
 /* TODO: sort this out better */
-ul#nav li a {
+div#nav ul li a {
     padding: 5px;
     border: 2px solid black;
     border-radius: 50px;
 }
 
-ul#nav li a:link {
+div#nav ul li a:link {
     color: black;
     text-decoration: none;
 }
 
-ul#nav li a:visited {
+div#nav ul li a:visited {
     color: black;
     text-decoration: none;
 }
 
-ul#nav li a:active {
+div#nav ul li a:active {
     color: aqua;
     background-color: aqua;
     text-decoration: none;
@@ -149,4 +156,20 @@ ul#nav li a:active {
     display: inline-block;
     padding-left: 10%;
     text-align: left;
+}
+
+
+/* figures */
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure figcaption {
+    font-size: smaller;
+    color: darkgrey;
+}
+
+figure img {
+    width:100%;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="default.css" rel="stylesheet"/>
-    <title>Home</title>
+    <title>Weather</title>
 </head>
 <body>
 <div class="container">
@@ -14,14 +14,15 @@
     </div>
 
     <div class="row">
-        <div class="column col-12">
-            <ul id="nav">
+        <div class="column col-12" id="nav">
+            <ul>
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="videos.html">VIDEOS</a></li>
                 <li><a href="weather.html" class="current">WEATHER</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
+            <text id="breadcrumbs"><a href="weather.html">Weather</a></text>
         </div>
     </div>
 
@@ -29,34 +30,11 @@
     <div class="row">
         <div class="content_container">
             <div class="row">
-                <div class="column col-5">
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-theme="pure" >AMSTERDAM WEATHER</a>
-                    <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                    </script>
-                </div>
-                <div class="column col-5">
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/53d226d57/groningen/" data-label_1="GRONINGEN" data-label_2="WEATHER" data-theme="pure" >GRONINGEN WEATHER</a>
-                    <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                    </script>
+                <div class="column col-1">
+                    <iframe src="https://www.meteoblue.com/nl/weer/widget/three/groningen_nederland_2755251?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 460px; height: 594px"></iframe>
+                    <div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/nl/weer/week/groningen_nederland_2755251?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column col-5">
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/52d526d08/zwolle/" data-label_1="ZWOLLE" data-label_2="WEATHER" data-theme="pure" >ZWOLLE WEATHER</a>
-                    <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                    </script>
-                </div>
-                <div class="column col-5">
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/51d445d47/eindhoven/" data-label_1="EINDHOVEN" data-label_2="WEATHER" data-theme="pure" >EINDHOVEN WEATHER</a>
-                    <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                    </script>
-                </div>
-            </div>
-
         </div>
 
         <div class="column col-2 ads">

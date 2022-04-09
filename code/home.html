@@ -7,9 +7,16 @@
 </head>
 <body>
 <div class="container">
+    <header class="row">
+        <div class="column col-12" id="header">
+            <h1>HOME</h1>
+        </div>
+    </header>
+
     <nav class="row" id="top">
-        <div class="column col-12" id="nav">
+        <div class="column col-12 nav">
             <ul>
+                <li><h2>Navigation</h2></li>
                 <li><a href="home.html" class="current">HOME</a></li>
                 <li><a href="articles.html">ARTICLES</a></li>
                 <li><a href="videos.html">VIDEOS</a></li>
@@ -17,15 +24,20 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            <text id="breadcrumbs"><a href="home.html">Home</a></text>
+            <hr>
         </div>
     </nav>
 
     <div class="row">
-        <header class="column col-12 header">
-            <h2>
-                Articles
-            </h2>
+        <header class="column col-12 nav">
+            <ul>
+                <li><h2>Popular Articles</h2></li>
+                <li><a href="articles.html#lego-star-wars">LEGO STAR WARS</a></li>
+                <li><a href="articles.html#elden-ring">ELDEN RING</a></li>
+                <li><a href="articles.html#halo">HALO</a></li>
+                <li><a href="videos.html#trackmania">TRACKMANIA</a></li>
+                <li><a href="videos.html#mario-64">MARIO 64</a></li>
+            </ul>
             <hr>
         </header>
     </div>
@@ -34,15 +46,15 @@
     <div class="row">
         <div class="content_container">
             <section class="column col-5 article_link">
-                    <a href="lego_star_wars.html" class="article_link">
-                        <img src="../content/lego%20star%20wars%20-%20killing%20children/anakin%20stop%20panakin.jpg" alt="Anikin Skywalker with his lightsaber standing in front of young padawans" style="width:100%">
-                        <h2>Trying to kill children in Lego Star Wars reveals surprisingly useful exploit</h2>
-                    </a>
+                <a href="lego_star_wars.html" class="article_link">
+                    <img src="../content/lego%20star%20wars/lego%20star%20wars%20-%20killing%20children/anakin%20stop%20panakin.jpg" alt="Anikin Skywalker with his lightsaber standing in front of young padawans" style="width:100%">
+                    <h2>Trying to kill children in Lego Star Wars reveals surprisingly useful exploit</h2>
+                </a>
             </section>
 
             <section class="column col-5 article_link">
                 <a href="elden_ring.html" class="article_link">
-                    <img src="../content/elden%20ring%20too%20big/pic1.jpg" alt="Elden Ring character standing in front of giant building under a glowing tree" style="width:100%">
+                    <img src="../content/elden%20ring/elden%20ring%20too%20big/pic1.jpg" alt="Elden Ring character standing in front of giant building under a glowing tree" style="width:100%">
                     <h2>Elden Ring is too big</h2>
                 </a>
             </section>
@@ -54,34 +66,25 @@
     </div>
 
     <div class="row">
-        <header class="column col-12 header">
-            <h2>
-                Videos
-            </h2>
-            <hr>
-        </header>
-    </div>
-
-    <div class="row">
         <div class="content_container">
             <section class="column col-5 article_link">
                 <a href="trackmania_bug.html" class="article_link">
-                    <img src="../content/trackmania%20bug/thumbnail.jpg" alt="Race car flying over a race track" style="width:100%">
+                    <img src="../content/trackmania/trackmania%20bug/thumbnail.jpg" alt="Race car flying over a race track" style="width:100%">
                     <h2>New Gamebreaking Trackmania Bug Discovered</h2>
                 </a>
             </section>
 
             <section class="column col-5 article_link">
                 <a href="mario_64_skip.html" class="article_link">
-                    <img src="../content/mario%2064%20skip/thumbnail.jpg" alt="Thumbnail of a video saying 'huge time save'" style="width:100%">
+                    <img src="../content/mario%2064/mario%2064%20skip/thumbnail.jpg" alt="Thumbnail of a video saying 'huge time save'" style="width:100%">
                     <h2>Huge New Mario 64 Speedrun Skip Discovered</h2>
                 </a>
             </section>
         </div>
 
-        <aside class="column col-2 ads">
-            ads
-        </aside>
+<!--        <aside class="column col-2 ads">-->
+<!--            ads-->
+<!--        </aside>-->
     </div>
 
     <footer class="row">

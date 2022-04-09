@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="row" id="top">
+    <nav class="row" id="top">
         <div class="column col-12" id="nav">
             <ul>
                 <li><a href="home.html">HOME</a></li>
@@ -19,25 +19,21 @@
             </ul>
             <text id="breadcrumbs"><a href="home.html">Home</a> >> <a href="weather.html">Weather</a></text>
         </div>
-    </div>
+    </nav>
 
 
     <div class="row">
-        <div class="content_container">
-            <div class="row">
-                <div class="column col-1">
-                    <iframe src="https://www.meteoblue.com/nl/weer/widget/three/groningen_nederland_2755251?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="YES" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 594px" id="weather"></iframe>
-                    <div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/nl/weer/week/groningen_nederland_2755251?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
-                </div>
-            </div>
-        </div>
+        <section class="column col-10 article">
+            <iframe src="https://www.meteoblue.com/nl/weer/widget/three/groningen_nederland_2755251?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="YES" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 594px" id="weather"></iframe>
+            <div class="text"><!-- DO NOT REMOVE THIS LINK --><span><a href="https://www.meteoblue.com/nl/weer/week/groningen_nederland_2755251?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></span></div>
+        </section>
 
-        <div class="column col-2 ads">
+        <aside class="column col-2 ads">
             ads
-        </div>
+        </aside>
     </div>
 
-    <div class="row">
+    <footer class="row">
         <div class="column col-12" id="footer">
             <div>
                 <strong>Quick nav</strong><br>
@@ -53,7 +49,7 @@
 
             </div>
         </div>
-    </div>
+    </footer>
 </div>
 </body>
 </html>

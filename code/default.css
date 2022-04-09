@@ -21,8 +21,6 @@ body {
         /*background-color: lightgrey;*/
         margin: 5px;
         padding: 5px;
-        /*margin: 10px;*/
-        /*padding: 1em;*/
     }
 
     .content_container {
@@ -48,8 +46,6 @@ body {
         /*background-color: lightgrey;*/
         margin: 5px;
         padding: 5px;
-        /*margin: 10px;*/
-        /*padding: 1em;*/
     }
 
     .content_container {
@@ -72,8 +68,6 @@ body {
         /*background-color: lightgrey;*/
         margin: 5px;
         padding: 5px;
-        /*margin: 10px;*/
-        /*padding: 1em;*/
     }
 }
 
@@ -105,12 +99,7 @@ body {
 
 
 /* css that is the same for every page */
-.header {
-    text-align: left;
-}
-
 /* navigation */
-/* TODO: maybe make this dependent on the media query */
 #nav {
     text-align: center;
     background-color: #1ead29;
@@ -155,6 +144,30 @@ div#nav ul li a:active {
     color: white;
 }
 
+#breadcrumbs {
+    color: #117217;
+}
+
+#breadcrumbs a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#breadcrumbs a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#breadcrumbs a:hover {
+    color: #117217;
+    text-decoration: none;
+}
+
+#breadcrumbs a:active {
+    color: #1ead29;
+    text-decoration: none;
+}
+
 
 /* figures */
 figure {
@@ -172,54 +185,61 @@ figure img {
 }
 
 
-/* article links on home page*/
-.article {
+/* article links on home page */
+.article_link {
     background-color: #383838;
-    padding: 0;
+    padding: 0 0 5px 0;
     text-align: center;
-    padding-bottom: 5px;
 }
 
-.article:link {
+.article_link:link {
     color: white;
     background-color: #383838;
     text-decoration: none;
 }
 
-.article:visited {
+.article_link:visited {
     color: white;
     text-decoration: none;
 }
 
-.article:hover {
+.article_link:hover {
     color: #1ead29;
 }
 
-.article:active {
+.article_link:active {
     color: #188c20;
     text-decoration: none;
 }
 
 
-/* article text */
-.text a:link {
+/* articles */
+.article {
+    padding: 0 0 5px 0;
+}
+
+.article a:link {
     color: #1ead29;
     text-decoration: none;
 }
 
-.text a:visited {
+.article a:visited {
     color: #1ead29;
     text-decoration: none;
 }
 
-.text a:hover {
-    color: #188c20;
+.article a:hover {
+    color: #117217;
     text-decoration: none;
 }
 
-.text a:active {
+.article a:active {
     color: #1ead29;
     text-decoration: none;
+}
+
+h2, h3, p, hr, span {
+    padding: 0 5px 0 5px;
 }
 
 
@@ -253,5 +273,5 @@ figure img {
 }
 
 #footer a:hover {
-    color: #188c20;
+    color: #117217;
 }

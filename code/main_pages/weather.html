@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="default.css" rel="stylesheet"/>
-    <title>Mario 64</title>
+    <link href="../css/default.css" rel="stylesheet"/>
+    <title>Weather</title>
 </head>
 <body>
 <div class="container">
     <header class="row">
         <div class="column col-12" id="header">
-            <h1>VIDEOS</h1>
+            <h1>WEATHER</h1>
         </div>
     </header>
+
     <nav class="row" id="top">
         <div class="column col-12 nav">
             <ul>
                 <li><h2>Navigation</h2></li>
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="articles.html">ARTICLES</a></li>
-                <li><a href="videos.html" class="current">VIDEOS</a></li>
-                <li><a href="weather.html">WEATHER</a></li>
+                <li><a href="videos.html">VIDEOS</a></li>
+                <li><a href="weather.html" class="current">WEATHER</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -29,22 +30,15 @@
 
     <div class="row">
         <div class="column col-12 breadcrumbs">
-            <text id="breadcrumbs"><a href="home.html">Home</a> >> <a href="videos.html">Videos</a> >> <a href="videos.html#mario-64">Mario 64</a> >> <a href="mario_64_skip.html">Mario 64 New Time Save</a></text>
+            <text id="breadcrumbs"><a href="home.html">Home</a> >> <a href="weather.html">Weather</a></text>
             <hr>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column col-12 article">
-            <h2>A Huge New Mario 64 Speedrun Skip Was Discovered</h2>
         </div>
     </div>
 
     <div class="row">
         <section class="column col-10 article">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/9dsqeOq8Hgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <hr>
-            <span class="text">Taken from <a href=https://www.youtube.com/c/SimplyN64" target="_blank">Simply's Youtube Channel</a></span>
+            <iframe src="https://www.meteoblue.com/nl/weer/widget/three/groningen_nederland_2755251?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="YES" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 594px" id="weather"></iframe>
+            <div class="text"><!-- DO NOT REMOVE THIS LINK --><span><a href="https://www.meteoblue.com/nl/weer/week/groningen_nederland_2755251?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></span></div>
         </section>
 
         <aside class="column col-2 ads">
